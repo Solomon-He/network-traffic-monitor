@@ -1,0 +1,115 @@
+@use './variables' as vars;
+
+// 导入主题
+@use './themes/light';
+@use './themes/dark';
+
+// 全局样式
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: vars.$font-family-base;
+  font-size: vars.$font-size-base;
+  line-height: 1.5;
+  color: var(--text-color-primary);
+  background-color: var(--background-color-body);
+  transition:
+    background-color vars.$transition-normal,
+    color vars.$transition-normal;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color vars.$transition-fast;
+
+  &:hover {
+    color: var(--primary-color-light);
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+// 通用布局类
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 vars.$spacing-md;
+}
+
+// 卡片样式
+.card {
+  background-color: var(--background-color-component);
+  border-radius: vars.$border-radius-md;
+  box-shadow: var(--box-shadow-card);
+  padding: vars.$spacing-lg;
+  margin-bottom: vars.$spacing-md;
+  transition:
+    box-shadow vars.$transition-normal,
+    background-color vars.$transition-normal;
+}
+
+// 响应式工具类
+@media (max-width: vars.$breakpoint-sm) {
+  .hide-sm {
+    display: none !important;
+  }
+}
+
+@media (max-width: vars.$breakpoint-md) {
+  .hide-md {
+    display: none !important;
+  }
+}
+
+// 辅助类
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mb-sm {
+  margin-bottom: vars.$spacing-sm;
+}
+
+.mb-md {
+  margin-bottom: vars.$spacing-md;
+}
+
+.mb-lg {
+  margin-bottom: vars.$spacing-lg;
+}
+
+// 滚动条样式
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-color-disabled);
+}

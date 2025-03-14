@@ -1,0 +1,45 @@
+// 暗色主题
+
+html.dark {
+  // 主色调
+  --primary-color: #177ddc;
+  --primary-color-light: #1890ff;
+  --primary-color-dark: #0050b3;
+
+  // 辅助色
+  --success-color: #49aa19;
+  --warning-color: #d89614;
+  --error-color: #d32029;
+  --info-color: #177ddc;
+
+  // 中性色
+  --text-color-primary: rgba(255, 255, 255, 0.85);
+  --text-color-secondary: rgba(255, 255, 255, 0.65);
+  --text-color-disabled: rgba(255, 255, 255, 0.45);
+  --border-color: #434343;
+  --border-color-split: #303030;
+
+  // 背景色
+  --background-color-base: #141414;
+  --background-color-light: #1f1f1f;
+  --background-color-body: #000;
+  --background-color-component: #1f1f1f;
+
+  // 阴影
+  --box-shadow-base: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.6);
+  --box-shadow-card: 0 3px 6px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.4);
+  --box-shadow-popup: 0 10px 20px rgba(0, 0, 0, 0.5), 0 3px 6px rgba(0, 0, 0, 0.4);
+
+  // 图表颜色
+  --chart-color-1: #177ddc;
+  --chart-color-2: #49aa19;
+  --chart-color-3: #d89614;
+  --chart-color-4: #d32029;
+  --chart-color-5: #642ab5;
+  --chart-color-6: #13a8a8;
+
+  // 网络流量特定颜色
+  --rx-color: #177ddc;
+  --tx-color: #49aa19;
+  --error-rate-color: #d32029;
+}

@@ -1,0 +1,45 @@
+// 亮色主题
+
+:root {
+  // 主色调
+  --primary-color: #1890ff;
+  --primary-color-light: #40a9ff;
+  --primary-color-dark: #096dd9;
+
+  // 辅助色
+  --success-color: #52c41a;
+  --warning-color: #faad14;
+  --error-color: #f5222d;
+  --info-color: #1890ff;
+
+  // 中性色
+  --text-color-primary: rgba(0, 0, 0, 0.85);
+  --text-color-secondary: rgba(0, 0, 0, 0.65);
+  --text-color-disabled: rgba(0, 0, 0, 0.45);
+  --border-color: #d9d9d9;
+  --border-color-split: #f0f0f0;
+
+  // 背景色
+  --background-color-base: #f0f2f5;
+  --background-color-light: #fafafa;
+  --background-color-body: #fff;
+  --background-color-component: #fff;
+
+  // 阴影
+  --box-shadow-base: var(--shadow-sm);
+  --box-shadow-card: var(--shadow-md);
+  --box-shadow-popup: var(--shadow-lg);
+
+  // 图表颜色
+  --chart-color-1: #1890ff;
+  --chart-color-2: #52c41a;
+  --chart-color-3: #faad14;
+  --chart-color-4: #f5222d;
+  --chart-color-5: #722ed1;
+  --chart-color-6: #13c2c2;
+
+  // 网络流量特定颜色
+  --rx-color: #1890ff;
+  --tx-color: #52c41a;
+  --error-rate-color: #f5222d;
+}
