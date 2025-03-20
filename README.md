@@ -53,6 +53,16 @@
 - **安全**：Helmet <img src="https://api.iconify.design/logos:helmet.svg" width="16" height="16"/>
 - **跨域**：CORS
 
+
+## 📸 项目演示
+
+### 仪表盘界面
+![仪表盘界面](/network-traffic-monitor-frontend/src/assets/image/仪表盘.png)
+
+### 详细监测界面
+![详细监测界面](/network-traffic-monitor-frontend/src/assets/image/详情.png)
+
+
 ## 📥 安装步骤
 
 ### 前提条件
